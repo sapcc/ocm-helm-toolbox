@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2025 SAP SE or an SAP affiliate company
+# SPDX-License-Identifier: Apache-2.0
+
 FROM alpine:3.21 AS downloader
 ARG HELM_VERSION=3.17.3
 ARG OCM_VERSION=0.23.0
