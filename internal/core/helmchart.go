@@ -249,6 +249,9 @@ func UnpackHelmChartTarball(buf []byte, outputDirPath string) error {
 		}
 
 		logg.Debug("unpacking %s...", hdr.Name)
+		if !filepath.IsLocal(hdr.Name) {
+			return fmt.Errorf("refusing to extract file %q which looks like it wants to exploit a path-traversal vulnerability", hdr.Name)
+		}
 		targetPath := filepath.Join(outputDirPath, hdr.Name) //nolint:gosec // yes, gosec, we do in fact want to unpack a tar archive in this unpack-tar-archive function
 		err = os.MkdirAll(filepath.Dir(targetPath), 0777)    // NOTE: final mode is subject to umask
 		if err != nil {
