@@ -38,7 +38,7 @@ type DeclaredChartDependency struct {
 	Repository string `yaml:"repository"`
 
 	// This field may contain a match expression like "^1.1" instead of a concrete version like "1.1.5".
-	Version string `yaml:"version"`
+	VersionMatchExpression string `yaml:"version"`
 }
 
 // ComputedChartDependency appears in Chart.lock of a Helm chart.
