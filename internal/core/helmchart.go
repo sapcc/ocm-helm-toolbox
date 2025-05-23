@@ -6,6 +6,7 @@ package core
 import (
 	"archive/tar"
 	"bytes"
+	"compress/gzip"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -238,6 +239,49 @@ func validateDependencyCoherence(declaredDeps []DeclaredChartDependency, compute
 // UnpackHelmChartTarball takes the binary contents of a chart.tar file and
 // unpacks them into the given output path.
 func UnpackHelmChartTarball(buf []byte, outputDirPath string) error {
+	err := unpackTarball(buf, outputDirPath)
+	if err != nil {
+		return err
+	}
+
+	// if dependency charts are included as charts/*.tgz, we also unpack these explicitly
+	//
+	// This is intended for workflows where the unbundle result gets committed into Git,
+	// e.g. when CD systems like Argo watch a Git repo instead of an OCM repository.
+	// By unpacking the archive files, the commit diffs become more meaningful
+	// and delta compression becomes more efficient.
+	archivePaths, err := filepath.Glob(filepath.Join(outputDirPath, "charts/*.tgz"))
+	if err != nil {
+		return err
+	}
+	for _, archivePath := range archivePaths {
+		file, err := os.Open(archivePath)
+		if err != nil {
+			return err
+		}
+		gz, err := gzip.NewReader(file)
+		if err != nil {
+			return fmt.Errorf("while uncompressing %s: %w", archivePath, err)
+		}
+		buf, err := io.ReadAll(gz)
+		if err != nil {
+			return fmt.Errorf("while uncompressing %s: %w", archivePath, err)
+		}
+		// NOTE: By convention, the tarballs contain all their content below `$CHART_NAME/`,
+		// so this will unpack to `$OUTPUT_DIR_PATH/charts/$CHART_NAME/`.
+		err = unpackTarball(buf, filepath.Join(outputDirPath, "charts"))
+		if err != nil {
+			return fmt.Errorf("while unpacking %s: %w", archivePath, err)
+		}
+		err = os.Remove(archivePath)
+		if err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
+func unpackTarball(buf []byte, outputDirPath string) error {
 	tr := tar.NewReader(bytes.NewReader(buf))
 	for {
 		hdr, err := tr.Next()
