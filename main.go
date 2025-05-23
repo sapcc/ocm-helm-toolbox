@@ -285,7 +285,7 @@ func unbundle(cmd *cobra.Command, args []string) error {
 	if err != nil {
 		return fmt.Errorf("could not marshal localized-values.yaml: %w", err)
 	}
-	localizedValuesPath := filepath.Join(outputDirPath, "localized-values.yaml")
+	localizedValuesPath := filepath.Join(chartPath, "localized-values.yaml")
 	err = os.WriteFile(localizedValuesPath, buf, 0666) // NOTE: final mode is subject to umask
 	if err != nil {
 		return err
@@ -296,7 +296,7 @@ func unbundle(cmd *cobra.Command, args []string) error {
 	if ok {
 		gitLocationJSON, ok := gitLocationValue.(string)
 		if ok {
-			gitLocationPath := filepath.Join(outputDirPath, "git-location.json")
+			gitLocationPath := filepath.Join(chartPath, "git-location.json")
 			err = os.WriteFile(gitLocationPath, []byte(gitLocationJSON), 0666) // NOTE: final mode is subject to umask
 			if err != nil {
 				return err
