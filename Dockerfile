@@ -15,7 +15,7 @@ RUN ${CURL} https://github.com/open-component-model/ocm/releases/download/v${OCM
 
 ################################################################################
 
-FROM golang:1.24.3-alpine3.21 AS builder
+FROM golang:1.24.4-alpine3.22 AS builder
 
 RUN apk add --no-cache --no-progress ca-certificates gcc git make musl-dev
 
@@ -25,7 +25,7 @@ RUN make -C /src install PREFIX=/pkg GOTOOLCHAIN=local GO_BUILDFLAGS='-mod vendo
 
 ################################################################################
 
-FROM alpine:3.21
+FROM alpine:3.22
 
 # upgrade all installed packages to fix potential CVEs in advance
 # also remove apk package manager to hopefully remove dependency on OpenSSL 🤞
