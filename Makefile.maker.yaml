@@ -36,8 +36,9 @@ dockerfile:
     - 'RUN ocm --version 2>/dev/null && helm version -c 2>/dev/null'
 
 golang:
-  setGoModVersion: true
+  autoupdateableDeps: ^github.com/(?:sapcc|sap-cloud-infrastructure)/
   enableVendoring: true
+  setGoModVersion: true
 
 golangciLint:
   createConfig: true
