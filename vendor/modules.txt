@@ -13,7 +13,7 @@ github.com/majewsky/gg/option
 # github.com/opencontainers/go-digest v1.0.0
 ## explicit; go 1.13
 github.com/opencontainers/go-digest
-# github.com/sapcc/go-api-declarations v1.17.1
+# github.com/sapcc/go-api-declarations v1.17.2
 ## explicit; go 1.24
 github.com/sapcc/go-api-declarations/bininfo
 # github.com/sapcc/go-bits v0.0.0-20250722084227-7a82273f02ae
