@@ -6,7 +6,7 @@ require (
 	github.com/containers/image/v5 v5.36.0
 	github.com/majewsky/gg v1.1.0
 	github.com/sapcc/go-api-declarations v1.17.2
-	github.com/sapcc/go-bits v0.0.0-20250722084227-7a82273f02ae
+	github.com/sapcc/go-bits v0.0.0-20250731191043-57f08bbe1dce
 	github.com/spf13/cobra v1.9.1
 	gopkg.in/yaml.v3 v3.0.1
 )
