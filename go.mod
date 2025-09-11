@@ -1,6 +1,6 @@
 module github.com/sapcc/ocm-helm-toolbox
 
-go 1.24.0
+go 1.25
 
 require (
 	github.com/containers/image/v5 v5.36.1
