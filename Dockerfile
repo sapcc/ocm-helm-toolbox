@@ -15,7 +15,7 @@ RUN ${CURL} https://github.com/open-component-model/ocm/releases/download/v${OCM
 
 ################################################################################
 
-FROM golang:1.25.3-alpine3.22 AS builder
+FROM golang:1.25.4-alpine3.22 AS builder
 
 RUN apk add --no-cache --no-progress ca-certificates gcc git make musl-dev
 
