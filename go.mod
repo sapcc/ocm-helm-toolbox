@@ -7,7 +7,7 @@ require (
 	github.com/majewsky/gg v1.5.0
 	github.com/sapcc/go-api-declarations v1.18.0
 	github.com/sapcc/go-bits v0.0.0-20251204133412-746f1e02903e
-	github.com/spf13/cobra v1.10.1
+	github.com/spf13/cobra v1.10.2
 	gopkg.in/yaml.v3 v3.0.1
 )
 
