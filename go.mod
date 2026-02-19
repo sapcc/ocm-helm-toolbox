@@ -5,8 +5,8 @@ go 1.25
 require (
 	github.com/containers/image/v5 v5.36.2
 	github.com/majewsky/gg v1.5.0
-	github.com/sapcc/go-api-declarations v1.18.0
-	github.com/sapcc/go-bits v0.0.0-20260212180203-791f29d90b4b
+	github.com/sapcc/go-api-declarations v1.19.0
+	github.com/sapcc/go-bits v0.0.0-20260219121224-1c2b75dbf776
 	github.com/spf13/cobra v1.10.2
 	gopkg.in/yaml.v3 v3.0.1
 )
