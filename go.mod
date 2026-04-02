@@ -4,9 +4,9 @@ go 1.26
 
 require (
 	github.com/containers/image/v5 v5.36.2
-	github.com/majewsky/gg v1.5.0
+	github.com/majewsky/gg v1.6.0
 	github.com/sapcc/go-api-declarations v1.21.0
-	github.com/sapcc/go-bits v0.0.0-20260326130200-4521b37f2cb0
+	github.com/sapcc/go-bits v0.0.0-20260402121530-dccf194c4472
 	github.com/spf13/cobra v1.10.2
 	gopkg.in/yaml.v3 v3.0.1
 )
