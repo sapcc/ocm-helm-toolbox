@@ -11,9 +11,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/containers/image/v5/docker/reference"
 	"github.com/sapcc/go-bits/logg"
 	"github.com/sapcc/go-bits/osext"
+	"go.podman.io/image/v5/docker/reference"
 )
 
 // ImageRelation contains a parsed `--image-relation` value.

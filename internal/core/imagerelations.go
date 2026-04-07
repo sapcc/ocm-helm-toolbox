@@ -13,7 +13,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/containers/image/v5/docker/reference"
+	"go.podman.io/image/v5/docker/reference"
 )
 
 var imageRelationSeparatorRx = regexp.MustCompile(`,|\n`)
