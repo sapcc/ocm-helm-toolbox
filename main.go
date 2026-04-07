@@ -13,12 +13,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/containers/image/v5/docker/reference"
 	"github.com/sapcc/go-api-declarations/bininfo"
 	"github.com/sapcc/go-bits/httpext"
 	"github.com/sapcc/go-bits/logg"
 	"github.com/sapcc/go-bits/must"
 	"github.com/spf13/cobra"
+	"go.podman.io/image/v5/docker/reference"
 	"gopkg.in/yaml.v3"
 
 	"github.com/sapcc/ocm-helm-toolbox/internal/core"

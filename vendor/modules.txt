@@ -1,12 +1,8 @@
-# github.com/containers/image/v5 v5.36.2
-## explicit; go 1.23.3
-github.com/containers/image/v5/docker/reference
-# github.com/containers/storage v1.59.1
-## explicit; go 1.23.0
-github.com/containers/storage/pkg/regexp
 # github.com/inconshreveable/mousetrap v1.1.0
 ## explicit; go 1.18
 github.com/inconshreveable/mousetrap
+# github.com/kr/text v0.2.0
+## explicit
 # github.com/majewsky/gg v1.6.0
 ## explicit; go 1.24
 github.com/majewsky/gg/option
@@ -29,6 +25,12 @@ github.com/spf13/cobra
 # github.com/spf13/pflag v1.0.9
 ## explicit; go 1.12
 github.com/spf13/pflag
+# go.podman.io/image/v5 v5.39.2
+## explicit; go 1.24.0
+go.podman.io/image/v5/docker/reference
+# go.podman.io/storage v1.62.0
+## explicit; go 1.24.0
+go.podman.io/storage/pkg/regexp
 # gopkg.in/yaml.v3 v3.0.1
 ## explicit
 gopkg.in/yaml.v3
