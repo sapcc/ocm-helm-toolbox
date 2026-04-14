@@ -5,7 +5,7 @@ go 1.26
 require (
 	github.com/majewsky/gg v1.6.0
 	github.com/sapcc/go-api-declarations v1.21.0
-	github.com/sapcc/go-bits v0.0.0-20260409170436-d7b7822ab7d3
+	github.com/sapcc/go-bits v0.0.0-20260411221028-362563613921
 	github.com/spf13/cobra v1.10.2
 	go.podman.io/image/v5 v5.39.2
 	gopkg.in/yaml.v3 v3.0.1
