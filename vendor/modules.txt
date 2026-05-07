@@ -3,16 +3,13 @@
 github.com/inconshreveable/mousetrap
 # github.com/kr/text v0.2.0
 ## explicit
-# github.com/majewsky/gg v1.6.0
-## explicit; go 1.24
-github.com/majewsky/gg/option
 # github.com/opencontainers/go-digest v1.0.0
 ## explicit; go 1.13
 github.com/opencontainers/go-digest
-# github.com/sapcc/go-api-declarations v1.21.0
+# github.com/sapcc/go-api-declarations v1.22.0
 ## explicit; go 1.24
 github.com/sapcc/go-api-declarations/bininfo
-# github.com/sapcc/go-bits v0.0.0-20260423021225-fb5e4523b6c5
+# github.com/sapcc/go-bits v0.0.0-20260507090738-58bd3afe1717
 ## explicit; go 1.26
 github.com/sapcc/go-bits/httpext
 github.com/sapcc/go-bits/logg
@@ -31,6 +28,9 @@ go.podman.io/image/v5/docker/reference
 # go.podman.io/storage v1.62.0
 ## explicit; go 1.24.0
 go.podman.io/storage/pkg/regexp
+# go.xyrillian.de/gg v1.7.0
+## explicit; go 1.24
+go.xyrillian.de/gg/option
 # gopkg.in/yaml.v3 v3.0.1
 ## explicit
 gopkg.in/yaml.v3

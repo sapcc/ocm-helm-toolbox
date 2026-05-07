@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	. "github.com/majewsky/gg/option"
+	. "go.xyrillian.de/gg/option"
 )
 
 // GitLocation describes where a given directory from a checkout can be found on a Git server.
