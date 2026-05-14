@@ -17,7 +17,7 @@ RUN ${CURL} https://github.com/open-component-model/ocm/releases/download/v${OCM
 
 FROM golang:1.26.3-alpine3.23 AS builder
 
-RUN apk add --no-cache --no-progress ca-certificates gcc git make musl-dev
+RUN apk add --no-cache --no-progress ca-certificates gcc musl-dev git make
 
 COPY . /src
 ARG BININFO_BUILD_DATE BININFO_COMMIT_HASH BININFO_VERSION # provided to 'make install'
