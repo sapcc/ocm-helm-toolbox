@@ -22,13 +22,13 @@ github.com/spf13/cobra
 # github.com/spf13/pflag v1.0.9
 ## explicit; go 1.12
 github.com/spf13/pflag
-# go.podman.io/image/v5 v5.39.2
-## explicit; go 1.24.0
+# go.podman.io/image/v5 v5.40.0
+## explicit; go 1.25.6
 go.podman.io/image/v5/docker/reference
-# go.podman.io/storage v1.62.0
-## explicit; go 1.24.0
+# go.podman.io/storage v1.63.0
+## explicit; go 1.25.0
 go.podman.io/storage/pkg/regexp
-# go.xyrillian.de/gg v1.7.0
+# go.xyrillian.de/gg v1.8.1
 ## explicit; go 1.24
 go.xyrillian.de/gg/option
 # gopkg.in/yaml.v3 v3.0.1
