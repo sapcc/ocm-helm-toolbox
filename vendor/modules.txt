@@ -9,7 +9,7 @@ github.com/opencontainers/go-digest
 # github.com/sapcc/go-api-declarations v1.22.0
 ## explicit; go 1.24
 github.com/sapcc/go-api-declarations/bininfo
-# github.com/sapcc/go-bits v0.0.0-20260604095421-6bd206943957
+# github.com/sapcc/go-bits v0.0.0-20260604151206-e698d422ff96
 ## explicit; go 1.26
 github.com/sapcc/go-bits/httpext
 github.com/sapcc/go-bits/logg
@@ -28,7 +28,7 @@ go.podman.io/image/v5/docker/reference
 # go.podman.io/storage v1.63.0
 ## explicit; go 1.25.0
 go.podman.io/storage/pkg/regexp
-# go.xyrillian.de/gg v1.8.1
+# go.xyrillian.de/gg v1.9.0
 ## explicit; go 1.24
 go.xyrillian.de/gg/option
 # gopkg.in/yaml.v3 v3.0.1
