@@ -4,10 +4,10 @@ go 1.26
 
 require (
 	github.com/sapcc/go-api-declarations v1.24.0
-	github.com/sapcc/go-bits v0.0.0-20260618170412-b440edfb4e25
+	github.com/sapcc/go-bits v0.0.0-20260623114633-b9734b46a368
 	github.com/spf13/cobra v1.10.2
 	go.podman.io/image/v5 v5.40.0
-	go.xyrillian.de/gg v1.9.1
+	go.xyrillian.de/gg v1.10.1
 	gopkg.in/yaml.v3 v3.0.1
 )
 
