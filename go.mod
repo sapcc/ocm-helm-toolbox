@@ -3,11 +3,11 @@ module github.com/sapcc/ocm-helm-toolbox
 go 1.26
 
 require (
-	github.com/sapcc/go-api-declarations v1.24.0
-	github.com/sapcc/go-bits v0.0.0-20260813170327-ea1a14435d35
+	github.com/sapcc/go-api-declarations v1.25.0
+	github.com/sapcc/go-bits v0.0.0-20260818140528-75bdd20c7867
 	github.com/spf13/cobra v1.10.2
 	go.podman.io/image/v5 v5.41.1
-	go.xyrillian.de/gg v1.13.3
+	go.xyrillian.de/gg v1.14.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
