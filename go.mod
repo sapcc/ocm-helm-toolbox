@@ -4,10 +4,10 @@ go 1.27
 
 require (
 	github.com/sapcc/go-api-declarations v1.25.1
-	github.com/sapcc/go-bits v0.0.0-20260917095256-d8aaf2d73069
+	github.com/sapcc/go-bits v0.0.0-20260924170438-e0aa5c665ed9
 	github.com/spf13/cobra v1.10.2
 	go.podman.io/image/v5 v5.41.1
-	go.xyrillian.de/gg v1.15.0
+	go.xyrillian.de/gg v1.16.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
