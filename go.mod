@@ -6,7 +6,7 @@ require (
 	github.com/sapcc/go-api-declarations v1.25.1
 	github.com/sapcc/go-bits v0.0.0-20261009090210-c011033c8559
 	github.com/spf13/cobra v1.10.2
-	go.podman.io/image/v5 v5.41.1
+	go.podman.io/image/v5 v5.41.2
 	go.xyrillian.de/gg v1.19.0
 	gopkg.in/yaml.v3 v3.0.1
 )
@@ -16,5 +16,5 @@ require (
 	github.com/kr/text v0.2.0 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/spf13/pflag v1.0.9 // indirect
-	go.podman.io/storage v1.64.0 // indirect
+	go.podman.io/storage v1.64.1 // indirect
 )
