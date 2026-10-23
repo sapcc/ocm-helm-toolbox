@@ -1,8 +1,6 @@
 # github.com/inconshreveable/mousetrap v1.1.0
 ## explicit; go 1.18
 github.com/inconshreveable/mousetrap
-# github.com/kr/text v0.2.0
-## explicit
 # github.com/opencontainers/go-digest v1.0.0
 ## explicit; go 1.13
 github.com/opencontainers/go-digest
@@ -22,11 +20,11 @@ github.com/spf13/cobra
 # github.com/spf13/pflag v1.0.9
 ## explicit; go 1.12
 github.com/spf13/pflag
-# go.podman.io/image/v5 v5.41.1
-## explicit; go 1.25.7
+# go.podman.io/image/v5 v5.42.0
+## explicit; go 1.26.0
 go.podman.io/image/v5/docker/reference
-# go.podman.io/storage v1.64.0
-## explicit; go 1.25.0
+# go.podman.io/storage v1.65.0
+## explicit; go 1.26.0
 go.podman.io/storage/pkg/regexp
 # go.xyrillian.de/gg v1.19.0
 ## explicit; go 1.26
